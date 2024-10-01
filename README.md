@@ -14,9 +14,19 @@ echo "Welcome to ITMO University"
 перечисление всех аргументов, а не только первого (что считывало бы просто первое слово).
 
 Напишем же сей [скрипт](script.bash):
+```cmd
+nano script.bash
+```
+Меняем содержимое:
 ```bash
 #!/bin/bash
 
 # Using $* instead $1 to take all arguments
 echo "Welcome, $*"
 ```
+Пробуем запустить:
+```cmd
+bash script.bash linux is the worst os
+>> out: Welcome, linux is the worst os
+```
+Таким образом, задача решена
